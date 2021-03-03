@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script id="vertex-shader" type="x-shader/x-vertex">
+
+attribute vec4 vPosition;
+uniform mat4 mProjection;
+uniform mat4 mView;
+uniform mat4 mModel;
+uniform mat4 mModelView;
+uniform float drawTexture;
+attribute vec3 vNormal;
+attribute vec2 vTexCoords;
+varying float t;
+varying vec3 fNormal;
+uniform mat4 mViewNormals;
+varying vec2 fTexCoords;
+varying vec4 fColor;
+void main(){
+    gl_Position = mProjection * mView * mModel * vPosition;
+    fNormal = vNormal;
+    fTexCoords = vTexCoords;
+    t = drawTexture;
+}
+</script>
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec3 fNormal;
+varying vec2 fTexCoords;
+varying float t;
+uniform sampler2D texture;
+void main() {
+    vec4 color;
+    //verifies if it is supposed to apply the texture
+    if(t == 0.0) color = vec4(fNormal, 1.0);
+    else color = texture2D(texture,fTexCoords);
+    gl_FragColor = color;
+}
+</script>
+<script type="text/javascript" src="Common/webgl-utils.js"></script>
+<script type="text/javascript" src="Common/initShaders.js"></script>
+<script type="text/javascript" src="Common/MV.js"></script>
+<script type="text/javascript" src="Common/cube.js"></script>
+<script type="text/javascript" src="Common/sphere.js"></script>
+<script type="text/javascript" src="Common/cylinder.js"></script>
+<script type="text/javascript" src="Common/cone.js"></script>
+<script type="text/javascript" src="Common/pyramid.js"></script>
+
+<script type="text/javascript" src="airplane.js"></script>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <title>TP3</title>
+
+    <!-- Canvas -->
+
+    <canvas id="gl-canvas" width="470" height="400">
+        Oops... your browser doesn't support the HTML5 canvas element"
+    </canvas>
+
+    </div>
+</body>
+</html>
