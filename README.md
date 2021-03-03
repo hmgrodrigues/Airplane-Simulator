@@ -1,6 +1,9 @@
 # Airplane-Simulator
 
 This is a project based on JavaScript and WebGL library, where it simulates how an airplane flies and the way it moves.
+A chess texture is being used as representation of the floor. Everytime the airplane reaches almost the end of each block of the texture a new block is generated in that direction.
+
+## How to use it
 
 It allows the user to control:
 
@@ -16,7 +19,7 @@ The view can be observed by one of the 4 pre-defined cameras associated to the a
 * **Front** view: Use the "**3**" key
 * **Chase** view: Use the "**0**" key
 
-We can observe the shape of the airplane as (Use the "**O**" key to go from one to another):
+We can observe the shape of the airplane as (Use the "**O**" key to alternate):
 
 * **Painted surfaces**
 * **Wired shaped**
