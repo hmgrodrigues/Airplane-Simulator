@@ -11,7 +11,7 @@ It allows the user to control:
 * The **yaw** by controlling the **rudder**: Use the "**Q**" and "**E**" keys
 * The **pitch** by controlling the **elevators**: Use the "**W**" and "**S**" keys
 * The **roll** by controlling the **ailerons**: Use the "**A**" and "**D**" keys
-* The **prosultion** by controlling the rotation speed of the **engines/properllers**: Use the "**R**" and "**F**" keys
+* The **propulsion** by controlling the rotation speed of the **engines/propellers**: Use the "**R**" and "**F**" keys
 
 The view can be observed by one of the 4 pre-defined cameras associated to the airplane position:
 
