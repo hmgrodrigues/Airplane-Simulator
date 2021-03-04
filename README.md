@@ -18,7 +18,7 @@ The view can be observed by one of the 4 pre-defined cameras associated to the a
 * **Top** view: Use the "**1**" key
 * **Lateral** view: Use the "**2**" key
 * **Front** view: Use the "**3**" key
-* **Chase** view: Use the "**0**" key
+* **Chase** view (default): Use the "**0**" key
 
 We can observe the shape of the airplane as (Use the "**O**" key to alternate):
 
