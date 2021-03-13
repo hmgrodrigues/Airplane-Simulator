@@ -2,6 +2,8 @@
 
 This is a project based on **JavaScript** and **WebGL** library, where it simulates how an airplane flies and the way it moves.
 
+Use **Google Chrome**!
+
 A chess texture is being used as representation of the floor. Everytime the airplane reaches almost the end of each block of the texture a new block is generated in that direction.
 
 ## How to use it
